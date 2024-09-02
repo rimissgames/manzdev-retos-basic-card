@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Montserrat;
+    src:
+      local("Montserrat"),
+      url("/assets/fonts/Montserrat-VF.woff2") format("woff2 supports variations"),
+      url("/assets/fonts/Montserrat-VF.woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-stretch: 50% 200%;
+}
+
+:root {
+    --accent-color: #cb21cd;
+    --text-color-alt: #a05d5d;
+    --text-color-muted: #888;
+    --text-color-accent: #2d7cbf;
+    --bg-gradient: linear-gradient(45deg, #d37ec6 0%, #ffc873 50%, #ff3867 100%);
+    --linear-gradient: linear-gradient(0deg, #23034b 0%, #23034b33 100%);
+}
+
+html,
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d37ec6;
+    background: var(--bg-gradient) no-repeat;
+}
+
